@@ -1,3 +1,6 @@
-from django.shortcuts import render
+from rest_framework.generics import ListCreateAPIView
+from pyconomy.accounts.serializers import AccountSerializer
 
-# Create your views here.
+
+class AccountListView(ListCreateAPIView):
+    serializer_class = AccountSerializer

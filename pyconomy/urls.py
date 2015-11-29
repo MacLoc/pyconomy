@@ -1,10 +1,7 @@
-from django.conf.urls import patterns, include, url
-from django.contrib import admin
+from django.conf.urls import patterns, url
+
+from pyconomy.accounts.views import AccountListView
 
 urlpatterns = patterns('',
-    # Examples:
-    # url(r'^$', 'pyconomy.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
-
-    url(r'^admin/', include(admin.site.urls)),
-)
+                       url(r'^v1/accounts/', AccountListView.as_view()),
+                       )
