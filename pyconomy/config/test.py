@@ -29,7 +29,6 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = (
     'django.contrib.contenttypes',
-    'rest_framework',
     'django.contrib.auth',
     'pyconomy.accounts',
 )
