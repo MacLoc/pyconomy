@@ -31,6 +31,7 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.auth',
     'pyconomy.accounts',
+    'pyconomy.expenses',
 )
 
 MIDDLEWARE_CLASSES = (
