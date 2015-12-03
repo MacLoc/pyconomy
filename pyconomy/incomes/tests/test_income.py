@@ -1,4 +1,3 @@
-
 import django
 
 from pyconomy.accounts.models import Account
@@ -15,10 +14,10 @@ class IncomeTest(APITestCase):
 
         # TODO: include date
         income_data = {'description': 'January Salary',
-                        'amount': '1503.90',
-                        'category': 'Salary',
-                        'account': account.id,
-                        'is_received': 'True'}
+                       'amount': '1503.90',
+                       'category': 'Salary',
+                       'account': account.id,
+                       'is_received': 'True'}
 
         response = self.client.post('/v1/incomes/', income_data)
 

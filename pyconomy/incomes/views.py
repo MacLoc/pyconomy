@@ -5,4 +5,3 @@ from pyconomy.incomes.serializers import IncomeSerializer
 
 class IncomeListView(ListCreateAPIView):
     serializer_class = IncomeSerializer
-

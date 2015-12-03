@@ -7,4 +7,3 @@ from pyconomy.expenses.serializers import ExpenseSerializer
 class ExpenseListView(ListCreateAPIView):
     serializer_class = ExpenseSerializer
     queryset = Expense.objects.all()
-
