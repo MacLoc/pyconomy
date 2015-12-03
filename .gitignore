@@ -1,7 +1,7 @@
 venv/
 # Pycharm 
 .idea/
-
+.idea/*
 # Vagrant
 .vagrant/
 
